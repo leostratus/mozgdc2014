@@ -10,8 +10,12 @@
 @import url(reset.css);
 
 body {
-	font:25px/1.8 'bebasregular', sans-serif;
+	font:25px/1.8 'monaco', 'courier', monospace;
 	counter-reset:paging;
+	/* Bebas font needs word-spacing to have better legibility in a presentation */
+	word-spacing: 5px;
+	letter-spacing: 0.04em;
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
 }
 
 body:after {
@@ -46,8 +50,8 @@ body:after {
 	padding:80px 120px 0;
 	width:784px;
 	height:560px;
-	background:url(../images/binding_dark.png);
-	color:rgb(239,149,22);
+	background:url(../images/squared_metal.png);
+	color:rgb(56,56,56);
 	}
 
 /* 
@@ -74,7 +78,7 @@ body:after {
 	opacity: 1; 
 }
 .fade .full .slide { 
-	background: url(../images/binding_dark.png); 
+	background: url(../images/squared_metal.png); 
 }
 
 /* Header */
@@ -83,6 +87,7 @@ body:after {
 	color:rgb(231,93,12);
 	text-transform: uppercase;
 	font:lighter 40px/1.13 'bebasregular', sans-serif;
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
 	}
 
 /* Elements */
@@ -142,7 +147,7 @@ body:after {
 	position:absolute;
 	margin:-15px 0 0 -80px;
 	color:#666;
-	font:200px/1 'bebasregular', sans-serif;
+	font:200px/1 'monaco', 'courier', monospace;
 	content:'\201C'; /* ldquo */
 	}
 blockquote .quotesource {
@@ -167,7 +172,7 @@ blockquote .quotesource {
 		position:absolute;
 		margin-left:-120px;
 		width:100px;
-		color:rgb(239,149,22);
+		color:rgb(56,56,56);
 		text-align:right;
 		}
 	.slide ul > li:before {
