@@ -24,60 +24,102 @@
     </p>
   </aside>
 
-<!-- 
-    Simply copy the whole block for each slide you want.
-  Special slides get extra classes. Each slide needs an ID 
-  to allow for bookmarking and target jumping.
--->
+  <!-- 
+      Simply copy the whole block for each slide you want.
+    Special slides get extra classes. Each slide needs an ID 
+    to allow for bookmarking and target jumping.
+  -->
 
-<div id="title" class="slide"><div>
-  <section>
-    <header>
-      <h2>Tools and Distribution Models for Games on the Modern Web</h2>
-    </header>
-    <img src="pictures/templatedemos/high-five.jpg" 
-         class="middle shadow" height="400"
-         alt="High-five at the Mozilla Festival!">
-    <small class="byline">
-      Angelina Fabbro and Bill Maggs, Mozilla @ GDC 2014
-    </small>
-    <footer class="notes">
-      This is a simple cover slide with an image in the middle
-    </footer>
-  </section>
-</div></div>
-<!-- end example slide block -->
-
-<!-- Bill introduces the talk, transitions from asm.js into our material (5mins) -->
-
-<!-- Angelina's slides start here (15mins) -->
-
-<div id="times-square" class="slide"><div>
-  <section>
-    <header>
-      <h2>[times square photo]</h2>
-    </header>
-    <img src="pictures/templatedemos/high-five.jpg" 
-         class="middle shadow" height="400"
-         alt="Firefox DevTools featured in Times Square">
-    <footer class="notes">
-      "It's not an accident or coincidence that we were recently featured on PRWire in Times Square for our developer tools. This photo was taken during Mobile World Congress, where we also  had some big annoucements just like today."
-
-      "We've seen today that it's both feasible and promising to port your game to the web with asm.js, but what happens when your game lands on the web? How do you debug any cross-platform issues in an efficient manner? Further, here we are talking about porting your game from another language - what about JavaScript developers that are making games on the web in their browser as it's first platform? At Mozilla, we've been working on providing tools to suit both category of developer, and noting that often the needs of the two overlap."
-    </footer>
-  </section>
-</div></div>
-
-  <div id="summary" class="slide"><div>
+  <div id="title" class="slide"><div>
     <section>
       <header>
-        <h2></h2>
+        <h2>Tools and Distribution Models for Games on the Modern Web</h2>
       </header>
-      <p>The following are callout slide styles – either a large word, or a one sentence headline. Use them to chunk your presentation into logical units.</p>
+      <!-- Need to change this to better picture, perhaps of partner game -->
+      <img src="pictures/templatedemos/high-five.jpg" 
+           class="middle shadow" height="400"
+           alt="High-five at the Mozilla Festival!">
+      <small class="byline">
+        Angelina Fabbro and Bill Maggs, Mozilla @ GDC 2014
+      </small>
+      <footer class="notes">
+        This is a simple cover slide with an image in the middle
+      </footer>
+    </section>
+  </div></div>
+  <!-- end of slide block, as an example -->
+
+  <!-- 
+
+  Bill introduces the talk, transitions from asm.js into our material (5mins) 
+
+  Slides go here!
+
+  -->
+
+  <!-- The next slide is a placeholder for Bill to transition topics and introduce Angelina -->
+
+
+  <div id="devtools-intro" class="slide"><div>
+    <section>
+      <img src="images/devtools-logo.jpg" 
+           class="middle" height="400"
+           alt="Firefox DevTools">
+      <footer class="notes">
+        "We're not interested in replacing your existing tools, but rather augmenting your current workflow instead. You can already debug asm.js code in our JavaScript Debugger, but more  than that, here to talk about the tools we have for you is Angelina Fabbro from the Developer Tools team."
+      </footer>
+    </section>
+  </div></div>
+
+  <!-- Angelina's slides start here (15mins) -->
+
+  <div id="times-square" class="slide cover"><div>
+    <section>
+      <img src="images/fx-tools-prwire.jpg" 
+           class="middle" height="400"
+           alt="Firefox DevTools featured in Times Square">
+      <footer class="notes">
+        "It's not an accident or coincidence that we were recently featured on PRWire in Times Square for our developer tools. This photo was taken during Mobile World Congress, where we also had some big annoucements just like this week."
+
+        "We've seen today that it's both feasible and promising to port your game to the web with asm.js, but what happens when your game lands on the web? How do you debug any cross-platform issues in an efficient manner? Further, here we are talking about porting your game from another language - what about JavaScript developers that are making games on the web in their browser as it's first platform? At Mozilla, we've been working on providing tools to suit both category of developer, and noting that often the needs of the two overlap."
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="browsers-shout" class="slide shout"><div>
+    <section>
+      <header>
+        <h2>But... Browsers?</h2>
+      </header>
+      <footer class="notes">
+        "The first thing you're going to notice is that your game ends up in the context of a document object model that comprises what we colloquially refer to as a 'webpage' and often when there is more sophisticated behavior, an 'application'. One of the interesting things about working on the web is the control over your environment. Because you have control over the detail of the envinronment that you've embedded your game, you can style it and also program it in compelling ways to provide auxillary content to your users, whether it be adds or additional social features."
+      </footer>
+    </section>
+  </div></div> 
+
+  <div id="video-html-inspector" class="slide shout"><div>
+    <section>
+      <header>
+        <h2>[VIDEO]</h2>
+      </header>
       <footer class="notes">
       </footer>
     </section>
   </div></div> 
+
+  <div id="video-html-inspector" class="slide autoplay"><div>
+    <section>
+      <header>
+        <h2>[VIDEO]</h2>
+      </header>
+      <video controls class="middle shadow">
+        <source src="pictures/templatedemos/wave.mp4" type="video/mp4"></source>
+        <source src="pictures/templatedemos/wave.webm" type="video/webm"></source>
+      </video>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
 
   <div id="shaders-shout" class="slide shout"><div>
     <section>
@@ -90,7 +132,19 @@
     </section>
   </div></div>  
 
-"We've seen today that it's both feasible and promising to port your game to the web with asm.js, but what happens when your game lands on the web? How do you debug any cross-platform issues in an efficient manner? Further, here we are talking about porting your game from another language - what about JavaScript developers that are making games on the web in their browser as it's first platform? At Mozilla, we've been working on providing tools to suit both category of developer, and noting that often the needs of the two overlap."
+  <div id="video-shader-inspector" class="slide autoplay"><div>
+    <section>
+      <header>
+        <h2>[VIDEO]</h2>
+      </header>
+      <video controls class="middle shadow">
+        <source src="pictures/templatedemos/wave.mp4" type="video/mp4"></source>
+        <source src="pictures/templatedemos/wave.webm" type="video/webm"></source>
+      </video>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
 
   <div id="webgl-shout" class="slide shout"><div>
     <section>
@@ -99,6 +153,16 @@
       </header>
       <footer class="notes">
         A live demo happens now.
+      </footer>
+    </section>
+  </div></div> 
+
+  <div id="video-webgl-inspector" class="slide shout"><div>
+    <section>
+      <header>
+        <h2>[VIDEO]</h2>
+      </header>
+      <footer class="notes">
       </footer>
     </section>
   </div></div> 
@@ -113,6 +177,20 @@
     </section>
   </div></div> 
 
+  <div id="video-events-inspector" class="slide autoplay"><div>
+    <section>
+      <header>
+        <h2>[VIDEO]</h2>
+      </header>
+      <video controls class="middle shadow">
+        <source src="pictures/templatedemos/wave.mp4" type="video/mp4"></source>
+        <source src="pictures/templatedemos/wave.webm" type="video/webm"></source>
+      </video>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
   <div id="oneline" class="slide oneline"><div>
     <section>
       <header>
@@ -122,6 +200,20 @@
       </footer>
     </section>
   </div></div>  
+
+  <div id="video-webgl-inspector" class="slide autoplay"><div>
+    <section>
+      <header>
+        <h2>[VIDEO]</h2>
+      </header>
+      <video controls class="middle shadow">
+        <source src="pictures/templatedemos/wave.mp4" type="video/mp4"></source>
+        <source src="pictures/templatedemos/wave.webm" type="video/webm"></source>
+      </video>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
 
   <div id="performance-shout" class="slide shout"><div>
     <section>
