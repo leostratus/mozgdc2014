@@ -671,3 +671,12 @@ ul.inline li:last-child::after {
 	-webkit-transition: 0.5s;
 }
 
+/* GDC slide-specific styles
+ * Here be really specific styles
+ */
+
+#devtools-intro section{
+	background: #FFF;
+}
+
+
